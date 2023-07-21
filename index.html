@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Academic Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome link -->
+  <style>
+
+	.container {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .post-thumb {
+      flex: 0 0 300px;
+      margin-right: 30px;
+    }
+
+    .post-thumb img {
+      border-radius: 50%;
+      display: block;
+      height: 300px;
+      width: 300px;
+    }
+
+    .post-content {
+      flex: 1;
+      text-align: justify;
+    }
+
+.post-thumb li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 50px;
+}
+
+    body {
+      font-family: "Lora", serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f5f9; /* Light Violet */
+      color: #333; /* Dark Gray */
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      color: #0076d6; /* Blue heading color */
+      border-bottom: 2px solid #0076d6; /* Blue border bottom */
+      padding-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #f0f5f9; /* Light Violet footer background */
+      color: #333; /* Dark Gray font color */
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    footer p {
+      margin-left: 500px;
+      font-size: 14px;
+    }
+
+    /* Styles for the Publications Section */
+    .publications-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .publications-list li {
+      padding: 0px 0;
+      margin-left: 20px;
+    }
+
+    .publications-list h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .publications-list p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .publications-list a {
+      color: #0076d6; /* Blue link color */
+      text-decoration: none;
+    }
+
+    .publications-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<!-- #f0f5f9 -->
+
+<body>
+
+<main>
+  <div class="container">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <figure class="post-thumb">
+      <img src="matteo.jpeg" alt="matthew">
+      <ul>
+        <li>
+          <a href="https://github.com/ankul007" target="_blank">
+            <i class="fa fa-envelope-square " style="color:#EC7063"></i>
+          </a>
+        </li>
+	<li>
+          <a href="https://github.com/ankul007" target="_blank">
+            <i class="ai ai-cv-square " style="color:#48C9B0"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ankul007" target="_blank">
+            <i class="ai ai-google-scholar-square" style="color:#0076d6"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ankul007" target="_blank">
+            <i class="ai ai-dblp-square" style="color:#F4D03F"></i>
+          </a>
+        </li>
+      </ul>
+    </figure>
+    <div class="post-content">
+      <h1 style="text-align: center; color: #000"> Matteo Russo </h1>
+      <p>I am a Ph.D. student in Data Science at Sapienza University of Rome, where I am advised by <a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">Stefano Leonardi</a>.</p>
+      <p>My main research interests lie at the intersection between Computer Science and Economics, in particular Mechanism Design, Approximation and Online Algorithms, as well as Online Learning.</p>
+<h3 style="color:#0076d6"> Education </h3>
+	<p> <i class="fa-solid fa-graduation-cap" style="color:#0076d6"></i> PhD Data Science @ Sapienza University of Rome, ongoing </p>
+	<p> <i class="fa-solid fa-graduation-cap" style="color:#0076d6"></i> MSc Computer Science @ ETH Zurich, 2020-2022 </p>
+	<p> <i class="fa-solid fa-graduation-cap" style="color:#0076d6"></i> BSE Computer Science @ Princeton University, 2016-2020 </p>
+</p>
+    </div>
+  </div>
+
+  <!-- News and Activities Section -->
+  <section>
+    <h2>News and Activities</h2>
+    <ul>
+      <li>I am currently a research intern in Meta Core Data Science, advised by <a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">Riccardo Colini Baldeschi</a>.</li>
+      <li>I was a research assistant for a Multi-Agent Policy Making model at <a href="https://www.confagricoltura.it/eng/" target="_blank" style="font-family: "Lora", serif;">Confagricoltura (Italian Farmers Confederation)</a>.</li>
+    </ul>
+  </section>
+
+  <!-- Publications Section -->
+  <section>
+      <h2>Publications</h2>
+      <ul class="publications-list">
+        <li>
+          <h3>Contracts with Inspection</h3>
+          <p style="margin-bottom:8px"> <em> with Tomer Ezra, Stefano Leonardi. </em> </p>
+	  <p> Submitted. </p>
+          <p>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="ai ai-arxiv" style="color:#EC7063; font-size: 1.5em; margin-right:3px;"> </i> ArXiv
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-video" style="color:#000; font-size: 1.5em; margin-left:50px; margin-right:3px;"> </i> Video
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-copy" style="color:#2980B9; font-size: 1.5em; margin-left:45px; margin-right:3px;"> </i> Slides
+          	</a>
+	 </p>
+        </li>
+        <li>
+          <h3>Universal Optimization for Non-Clairvoyant Subadditive Joint Replenishment</h3>
+          <p style="margin-bottom:8px"> <em> with Tomer Ezra, Stefano Leonardi, Michal Pawlowski, William Seeun Umboh.</em> </p>
+	  <p> Submitted. </p>
+          <p>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="ai ai-arxiv" style="color:#EC7063; font-size: 1.5em; margin-right:3px;"> </i> ArXiv
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-video" style="color:#000; font-size: 1.5em; margin-left:50px; margin-right:3px;"> </i> Video
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-copy" style="color:#2980B9; font-size: 1.5em; margin-left:45px; margin-right:3px;"> </i> Slides
+          	</a>
+	 </p>
+        </li>
+	<li>
+          <h3>Fair Division with Interdependent Values</h3>
+          <p style="margin-bottom:8px"> <em> with Georgios Birmpas, Tomer Ezra, Stefano Leonardi. </em> </p>
+	  <p> Submitted. </p>
+          <p>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="ai ai-arxiv" style="color:#EC7063; font-size: 1.5em; margin-right:3px;"> </i> ArXiv
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-video" style="color:#000; font-size: 1.5em; margin-left:50px; margin-right:3px;"> </i> Video
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-copy" style="color:#2980B9; font-size: 1.5em; margin-left:45px; margin-right:3px;"> </i> Slides
+          	</a>
+	 </p>
+        </li>
+	<li>
+          <h3>On Clustering with Ordinal Preferences</h3>
+          <p style="margin-bottom:8px"> <em> with Ioannis Caragiannis, Chris Schwiegelshohn, Sudarshan Shyam. </em> </p>
+	  <p> Submitted. </p>
+          <p>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="ai ai-arxiv" style="color:#EC7063; font-size: 1.5em; margin-right:3px;"> </i> ArXiv
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-video" style="color:#000; font-size: 1.5em; margin-left:50px; margin-right:3px;"> </i> Video
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-copy" style="color:#2980B9; font-size: 1.5em; margin-left:45px; margin-right:3px;"> </i> Slides
+          	</a>
+	 </p>
+        </li>
+	<li>
+          <h3>Prophet Inequalities via the Expected Competitive Ratio</h3>
+          <p style="margin-bottom:8px"> <em> with Tomer Ezra, Stefano Leonardi, Rebecca Reiffenhäuser, Alexandros Tsigonias-Dimitriadis. </em> </p>
+	  <p> Submitted. </p>
+          <p>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="ai ai-arxiv" style="color:#EC7063; font-size: 1.5em; margin-right:3px;"> </i> ArXiv
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-video" style="color:#000; font-size: 1.5em; margin-left:50px; margin-right:3px;"> </i> Video
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-copy" style="color:#2980B9; font-size: 1.5em; margin-left:45px; margin-right:3px;"> </i> Slides
+          	</a>
+	 </p>
+        </li>
+	<li>
+          <h3>Submodular Norms with Applications to Online Facility Location and Stochastic Probing</h3>
+          <p style="margin-bottom:8px"> <em> with Kalen Patton, Sahil Singla. </em> </p>
+	  <p> International Conference on Approximation Algorithms for Combinatorial Optimization Problems <b> (APPROX 2023) </b>. </p>
+          <p>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="ai ai-arxiv" style="color:#EC7063; font-size: 1.5em; margin-right:3px;"> </i> ArXiv
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-video" style="color:#000; font-size: 1.5em; margin-left:50px; margin-right:3px;"> </i> Video
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-copy" style="color:#2980B9; font-size: 1.5em; margin-left:45px; margin-right:3px;"> </i> Slides
+          	</a>
+	 </p>
+        </li>
+	<li>
+          <h3>Fully Dynamic Online Selection through Online Contention Resolution Schemes</h3>
+          <p style="margin-bottom:8px"> <em> with Vashist Avadhanula, Andrea Celli, Riccardo Colini-Baldeschi, Stefano Leonardi.</em> 
+
+</p>
+<p> Association for the Advancement of Artificial Intelligence <b> (AAAI 2023) </b>. </p>
+          <p>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="ai ai-arxiv" style="color:#EC7063; font-size: 1.5em; margin-right:3px;"> </i> ArXiv
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-video" style="color:#000; font-size: 1.5em; margin-left:50px; margin-right:3px;"> </i> Video
+          	</a>
+		<a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">
+            		<i class="fa-solid fa-copy" style="color:#2980B9; font-size: 1.5em; margin-left:45px; margin-right:3px;"> </i> Slides
+          	</a>
+	 </p>
+        </li>
+        <!-- Add more publication items here as needed -->
+      </ul>
+    </section>
+
+<section>
+    <h2>Teaching</h2>
+    <ul>
+      <li> <a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">Tecniche di Programmazione con Laboratorio (Algorithms and Data Structures)</a>, with Stefano Leonardi and Federico Fusco, for the Bachelor in Scienze matematiche per l’intelligenza artificiale, Sapienza University of Rome, Spring 2023. Teaching Assistant. </li>
+    </ul>
+  </section>
+
+<section>
+    <h2>Service</h2>
+    <ul>
+      <li><a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">ALGA 2023</a> - Work­shop on Al­go­rithms, Learn­ing, and Games, Scicli, Italy <em>(Poster and Short-Talk)</em>.</li>
+      <li><a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">STOC 2022</a> - Symposium on Theory of Computing, Rome, Italy <em>(Volunteer)</em>.</li>
+      <li><a href="https://github.com/ankul007" target="_blank" style="font-family: "Lora", serif;">WALE 2022</a> - Work­shop on Al­go­rithms for Learn­ing and Eco­nom­ics, Naxos, Greece <em>(Poster)</em>.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Matteo Russo. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
