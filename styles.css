@@ -1,0 +1,135 @@
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text inside the container */
+  /* max-width: 500px; */
+}
+
+.post-content {
+  max-width: 400px;
+  /* margin-left: 2%; */
+  white-space: nowrap;
+}
+
+
+.post-thumb {
+  flex: 0 0 30%;
+  /* margin-right: 3.5%; */
+  /* margin-left: 3.5%; */
+  /* margin-top: 13%; */
+}
+
+.post-thumb img {
+  border-radius: 20%;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 250px;
+}
+
+/* .post-content {
+  flex: 1;
+  text-align: justify;
+} */
+
+.post-thumb li {
+list-style-type: none;
+display: inline-block;
+margin-right: 6.5%;
+padding-top: 0.0%;
+text-align: center;
+font-size: 300%;
+}
+
+/* Media Query for smaller screens */
+/* @media only screen and (max-width: 768px) {
+  .post-thumb {
+    flex: 0 0 100%;
+  }
+
+  .post-thumb li {
+    font-size: 1.5em;
+  }
+} */
+
+/* Body section from now on */
+
+    body {
+      font-family: "Lora", serif;
+      line-height: 160%;
+      background-color: #f0f5f9; /* Light Violet */
+      color: #333; /* Dark Gray */
+    }
+
+    main {
+      max-width: 85%;
+      margin: 0 auto;
+      padding-top: 5%;
+    }
+
+    section {
+      margin-bottom: 2%;
+      padding: 0;
+    }
+
+    section h2 {
+      color: #0076d6; /* Blue heading color */
+      border-bottom: 0.1em solid #0076d6; /* Blue border bottom */
+      padding-bottom: 1%;
+    }
+
+    /* footer {
+      background-color: #f0f5f9;
+      color: #333;
+      text-align: center;
+    } */
+
+    /* footer p {
+      text-align: center;
+      margin-left: 40%;
+      font-size: 80%;
+    }  */
+
+    footer {
+      background-color: #f0f5f9;
+      color: #333;
+      text-align: center;
+      margin-top: 2%; /* Add some space at the top */
+    }
+
+    /* Styles for the Publications Section */
+    .publications-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .publications-list li {
+      margin-left: 0%;
+    }
+
+    .publications-list h3 {
+      font-size: 110%;
+      margin-bottom: 1%;
+    }
+
+    .publications-list p {
+      margin: 1% 0;
+      font-size: 85%;
+    }
+
+    .publications-list a {
+      color: #0076d6; /* Blue link color */
+      text-decoration: none;
+    }
+
+    .publications-list a:hover {
+      text-decoration: underline;
+    }

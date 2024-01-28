@@ -2,113 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>Matteo Russo</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome link -->
-  <style>
-
-	.container {
-      display: flex;
-      align-items: flex-start;
-    }
-
-    .post-thumb {
-      flex: 0 0 35%;
-      margin-right: 3.5%;
-      margin-left: 3.5%;
-    }
-
-    .post-thumb img {
-      border-radius: 20%;
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .post-content {
-      flex: 1;
-      text-align: justify;
-    }
-
-.post-thumb li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 6.5%;
-  padding-top: 0.0%;
-  text-align: center;
-  font-size: 300%;
-}
-
-    body {
-      font-family: "Lora", serif;
-      line-height: 160%;
-      background-color: #f0f5f9; /* Light Violet */
-      color: #333; /* Dark Gray */
-    }
-
-    main {
-      max-width: 73%;
-      margin: 0 auto;
-      padding-top: 5%;
-    }
-
-    section {
-      margin-bottom: 5%;
-      padding: 0;
-    }
-
-    section h2 {
-      color: #0076d6; /* Blue heading color */
-      border-bottom: 0.1em solid #0076d6; /* Blue border bottom */
-      padding-bottom: 1%;
-    }
-
-    footer {
-      background-color: #f0f5f9; /* Light Violet footer background */
-      color: #333; /* Dark Gray font color */
-      text-align: center;
-    }
-
-    footer p {
-      text-align: center;
-      margin-left: 40%;
-      font-size: 80%;
-    }
-
-    /* Styles for the Publications Section */
-    .publications-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .publications-list li {
-      margin-left: 2%;
-    }
-
-    .publications-list h3 {
-      font-size: 110%;
-      margin-bottom: 1%;
-    }
-
-    .publications-list p {
-      margin: 1% 0;
-      font-size: 85%;
-    }
-
-    .publications-list a {
-      color: #0076d6; /* Blue link color */
-      text-decoration: none;
-    }
-
-    .publications-list a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<!-- #f0f5f9 -->
 
 <body>
 
@@ -117,48 +16,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <figure class="post-thumb">
       <img src="matteo.jpeg" alt="matthew">
-      <ul>
-        <li>
-          <a href="mailto:russo.matteo0801@gmail.com">
-            <i class="fa fa-envelope-square " style="color:#EC7063"></i>
-          </a>
-        </li>
-	<li>
-          <a href="https://drive.google.com/file/d/1VA4bIZx17k0HXbcWiB0SEfFGNYEAfzYS/view?usp=sharing" target="_blank">
-            <i class="ai ai-cv-square " style="color:#48C9B0"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=ZUM2Qp0AAAAJ" target="_blank">
-            <i class="ai ai-google-scholar-square" style="color:#0076d6"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://dblp.org/pid/190/5146.html" target="_blank">
-            <i class="ai ai-dblp-square" style="color:#F4D03F"></i>
-          </a>
-        </li>
-      </ul>
     </figure>
     <div class="post-content">
-      <h1 style="text-align: center; color: #000"> Matteo Russo </h1>
-      <p>I am a Ph.D. student in Data Science at Sapienza University of Rome, where I am advised by <a href="https://sites.google.com/a/uniroma1.it/stefanoleonardi-eng/home" target="_blank" style="font-family: "Lora", serif;">Stefano Leonardi</a>.</p>
-      <p>My main research interests lie at the intersection between Computer Science and Economics, in particular Mechanism Design, Approximation and Online Algorithms, as well as Online Learning.</p>
+      <h1 style="text-align: left; color: #000"> Matteo Russo </h1>
+	  <p style="text-align: left"><em>Ph.D. Student in Data Science</em></p>
+	  <p style="text-align: left"><em>Sapienza University of Rome</em></p>
+	  <p style="text-align: left"><em>mrusso-at-diag.uniroma1.it</em></p>
+      <p style="text-align: left"> 
+        <!-- <a href="mailto:russo.matteo0801@gmail.com"><i class="fa fa-envelope-square " style="color:#EC7063; font-size: 200%"></i></a> -->
+        <a href="https://drive.google.com/file/d/1VA4bIZx17k0HXbcWiB0SEfFGNYEAfzYS/view?usp=sharing" target="_blank"><i class="ai ai-cv-square " style="color:#48C9B0; font-size: 200%; margin-right: 4%;"></i></a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=ZUM2Qp0AAAAJ" target="_blank"><i class="ai ai-google-scholar-square" style="color:#0076d6; font-size: 200%; margin-right: 4%"></i></a>
+        <a href="https://dblp.org/pid/190/5146.html" target="_blank"><i class="ai ai-dblp-square" style="color:#F4D03F; font-size: 200%"></i></a>
+      </p>
+      <!-- <p>I am a second year Ph.D. student in Data Science at Sapienza University of Rome, where I am advised by <a href="https://sites.google.com/a/uniroma1.it/stefanoleonardi-eng/home" target="_blank" style="font-family: "Lora", serif;">Stefano Leonardi</a>.</p>
+      <p>My main research interests lie at the intersection between Computer Science and Economics, in particular <b>Mechanism Design</b>, <b>Approximation and Online Algorithms</b>, as well as <b>Online Learning</b>.</p>
 <h3 style="color:#0076d6"> Education </h3>
 	<p> <i class="fa-solid fa-graduation-cap" style="color:#0076d6"></i> PhD Data Science @ Sapienza University of Rome, ongoing </p>
 	<p> <i class="fa-solid fa-graduation-cap" style="color:#0076d6"></i> MSc Computer Science @ ETH Zurich, 2020-2022 </p>
-	<p> <i class="fa-solid fa-graduation-cap" style="color:#0076d6"></i> BSE Computer Science @ Princeton University, 2016-2020 </p>
-</p>
+	<p> <i class="fa-solid fa-graduation-cap" style="color:#0076d6"></i> BSE Computer Science @ Princeton University, 2016-2020 </p> -->
     </div>
   </div>
 
   <!-- News and Activities Section -->
-  <section>
+  <!-- <section>
     <h2>News and Activities</h2>
     <ul>
       <li>I was a research intern in Meta Central Applied Science in London (UK), advised by <a  href="https://research.facebook.com/people/colini-baldeschi-riccardo/" target="_blank" style="font-family: "Lora", serif;">Riccardo Colini Baldeschi</a>.</li>
       <li>I was a research assistant for a Multi-Agent Policy Making model at <a href="https://www.confagricoltura.it/eng/" target="_blank" style="font-family: "Lora", serif;">Confagricoltura (Italian Farmers Confederation)</a> in Rome (Italy).</li>
     </ul>
+  </section> -->
+
+  <section>
+    <h2>About</h2>
+    <p>I am a second year Ph.D. student in Data Science at Sapienza University of Rome, where I am advised by <a href="https://sites.google.com/a/uniroma1.it/stefanoleonardi-eng/home" target="_blank" style="font-family: "Lora", serif;">Stefano Leonardi</a>. 
+		Before that, I completed my Master's degree in Computer Science at ETH Zurich in 2022, and my Bachelor's degree in Computer Science at Princeton University in 2020. </p>
+		 </p>
+	<p> I am broadly interested in Theoretical Computer Science, with a particular focus in <b>Algorithmic Game Theory</b>, <b>Approximation and Online Algorithms</b>, as well as <b>Online Learning</b>.</p>
   </section>
 
   <!-- Publications Section -->
@@ -323,7 +216,9 @@
 <section>
     <h2>Teaching</h2>
     <ul>
-      <li> <a href="https://sites.google.com/a/uniroma1.it/stefanoleonardi-eng/teaching/tecniche-di-programmazione-e-laboratorio?authuser=0" target="_blank" style="font-family: "Lora", serif;">Tecniche di Programmazione con Laboratorio (Algorithms and Data Structures)</a>, with Stefano Leonardi and Federico Fusco, for the Bachelor in Scienze matematiche per l’intelligenza artificiale, Sapienza University of Rome, Spring 2023. Teaching Assistant. </li>
+      <li> <a href="https://sites.google.com/a/uniroma1.it/stefanoleonardi-eng/teaching/tecniche-di-programmazione-e-laboratorio?authuser=0" target="_blank" style="font-family: "Lora", serif;">Tecniche di Programmazione con Laboratorio (Algorithms and Data Structures)</a>, with Stefano Leonardi and Federico Fusco,
+		<!-- , for the Bachelor in Scienze matematiche per l’intelligenza artificiale, -->
+		Sapienza University of Rome, Spring 2023. Teaching Assistant. </li>
     </ul>
   </section>
 
@@ -339,11 +234,11 @@
 
 </main>
 
-<footer>
+<!-- <footer>
   <div class="container">
     <p>&copy; 2023 Matteo Russo. All rights reserved.</p>
   </div>
-</footer>
+</footer> -->
 
 </body>
 </html>
