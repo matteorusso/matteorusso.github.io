@@ -1,29 +1,18 @@
-/* .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Center text inside the container */
-  /* max-width: 500px; */
+  text-align: center;
 }
 
 .post-content {
   max-width: 400px;
-  /* margin-left: 2%; */
   white-space: nowrap;
 }
 
 
 .post-thumb {
   flex: 0 0 30%;
-  /* margin-right: 3.5%; */
-  /* margin-left: 3.5%; */
-  /* margin-top: 13%; */
 }
 
 .post-thumb img {
@@ -33,11 +22,6 @@
   height: auto;
   max-width: 250px;
 }
-
-/* .post-content {
-  flex: 1;
-  text-align: justify;
-} */
 
 .post-thumb li {
 list-style-type: none;
@@ -75,61 +59,37 @@ font-size: 300%;
     }
 
     section {
+      margin-top: 5%;
       margin-bottom: 2%;
       padding: 0;
     }
 
     section h2 {
-      color: #0076d6; /* Blue heading color */
-      border-bottom: 0.1em solid #0076d6; /* Blue border bottom */
+      color: #0076d6; 
+      border-bottom: 0.1em solid #0076d6; 
       padding-bottom: 1%;
     }
-
-    /* footer {
-      background-color: #f0f5f9;
-      color: #333;
-      text-align: center;
-    } */
-
-    /* footer p {
-      text-align: center;
-      margin-left: 40%;
-      font-size: 80%;
-    }  */
 
     footer {
       background-color: #f0f5f9;
       color: #333;
       text-align: center;
-      margin-top: 2%; /* Add some space at the top */
+      margin-top: 2%; 
     }
 
     /* Styles for the Publications Section */
+
     .publications-list {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    .publications-list li {
-      margin-left: 0%;
-    }
-
-    .publications-list h3 {
-      font-size: 110%;
-      margin-bottom: 1%;
-    }
-
-    .publications-list p {
-      margin: 1% 0;
-      font-size: 85%;
-    }
-
     .publications-list a {
-      color: #0076d6; /* Blue link color */
+      color: #0076d6;
       text-decoration: none;
     }
 
-    .publications-list a:hover {
+    /* .publications-list a:hover {
       text-decoration: underline;
-    }
+    } */
