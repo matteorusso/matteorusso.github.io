@@ -1,0 +1,6 @@
+# Social links are displayed in the order listed here.
+# To restore the CV icon, follow assets/pdf/README.md, then uncomment cv_pdf.
+cv_pdf: /assets/pdf/CV.pdf
+email: matteo.russo@epfl.ch
+scholar_userid: ZUM2Qp0AAAAJ
+dblp_url: https://dblp.org/pid/190/5146-2.html?view=by-type

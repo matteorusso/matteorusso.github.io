@@ -1,0 +1,301 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+title: blank
+first_name: Matteo
+middle_name:
+last_name: Russo
+contact_note:
+description: >
+  Personal academic website of Matteo Russo, a postdoctoral researcher in
+  theoretical computer science at EPFL working on online algorithms, online
+  learning, optimization, and algorithmic game theory.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
+  with the <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> theme.
+keywords: theoretical computer science, online algorithms, online learning, optimization, algorithmic game theory
+lang: en
+icon: ∑
+apple_touch_icon:
+url: https://matteorusso.github.io
+baseurl:
+last_updated: false
+impressum_path:
+back_to_top: true
+
+# Keep email addresses out of generated HTML where supported by al-folio.
+protect_email: true
+
+# -----------------------------------------------------------------------------
+# al-folio v1 runtime
+# -----------------------------------------------------------------------------
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: 4.1.18
+    preflight: false
+    css_entry: assets/tailwind/app.css
+  distill:
+    engine: distillpub-template
+    source: al-org-dev/distill-template#al-folio
+    allow_remote_loader: false
+  features:
+    cv:
+      enabled: false
+    distill:
+      enabled: false
+  compat:
+    bootstrap:
+      enabled: false
+      support_window: v1.0-v1.2
+      deprecates_in: v1.3
+      removed_in: v2.0
+  upgrade:
+    channel: stable
+    auto_apply_safe_fixes: false
+
+# -----------------------------------------------------------------------------
+# Layout and navigation
+# -----------------------------------------------------------------------------
+navbar_fixed: true
+footer_fixed: true
+search_enabled: true
+socials_in_search: true
+posts_in_search: false
+bib_search: true
+max_width: 930px
+
+serve_og_meta: true
+serve_schema_org: true
+og_image: /assets/img/prof_pic.jpg
+
+analytics:
+  google:
+  cronitor:
+  pirsch:
+  openpanel:
+  cloudflare:
+enable_simple_analytics: false
+google_site_verification:
+bing_site_verification:
+
+newsletter:
+  enabled: false
+  endpoint:
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+# No `_news` collection is declared: homepage news lives directly in
+# `_pages/about.md`, so it is not added to al-folio's Cmd/Ctrl-K search menu.
+collections: {}
+
+# -----------------------------------------------------------------------------
+# Jekyll
+# -----------------------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+include: ["_pages"]
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - legacy/
+  - vendor/
+
+keep_files:
+  - CNAME
+  - .nojekyll
+
+theme: al_folio_core
+
+plugins:
+  - jekyll-3rd-party-libraries
+  - jekyll-archives-v2
+  - jekyll-cache-bust
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-socials
+  - jekyll-tabs
+  - jekyll-terser
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+  - al_folio_core
+  - al_icons
+  - al_folio_cv
+  - al_folio_distill
+  - al_folio_upgrade
+  - al_folio_bootstrap_compat
+  - al_cookie
+  - al_analytics
+  - al_citations
+  - al_ext_posts
+  - al_img_tools
+  - al_search
+  - al_charts
+  - al_math
+  - al_comments
+  - al_newsletter
+  - al_email_protect
+  - al_marimo
+  - al_rtl
+
+defaults:
+  - scope:
+      path: assets
+    values:
+      sitemap: false
+
+sass:
+  style: compressed
+
+jekyll-minifier:
+  compress_javascript: false
+  compress_css: false
+  exclude: ["robots.txt"]
+
+terser:
+  compress:
+    drop_console: true
+
+# -----------------------------------------------------------------------------
+# Publications (Jekyll Scholar)
+# -----------------------------------------------------------------------------
+scholar:
+  last_name: [Russo]
+  first_name: [Matteo, M.]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  bibtex_filters: [latex, smallcaps, superscript]
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_link: Details
+  query: "@*"
+  group_by: year
+  group_order: descending
+  sort_by: year
+  order: descending
+
+filtered_bibtex_keywords:
+  - abbr
+  - abstract
+  - additional_info
+  - altmetric
+  - annotation
+  - arxiv
+  - award
+  - award_name
+  - bibtex_show
+  - blog
+  - code
+  - dimensions
+  - eprint
+  - google_scholar_id
+  - hal
+  - html
+  - inspirehep_id
+  - pdf
+  - pmid
+  - poster
+  - preview
+  - selected
+  - slides
+  - supp
+  - video
+  - website
+
+# Leave blank to display complete author lists.
+max_author_limit:
+more_authors_animation_delay: 10
+enable_publication_thumbnails: false
+enable_publication_badges:
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: false
+
+# -----------------------------------------------------------------------------
+# Images, links, and optional features
+# -----------------------------------------------------------------------------
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+  exclude:
+
+imagemagick:
+  enabled: false
+
+lazy_loading_images: true
+enable_google_verification: false
+enable_bing_verification: false
+enable_cookie_consent: false
+enable_masonry: false
+enable_math: false
+enable_tooltips: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: false
+enable_medium_zoom: false
+enable_progressbar: true
+enable_video_embedding: false
+
+# Libraries used by the core layout and social icons. Other optional libraries
+# can be added later from the upstream al-folio _config.yml when needed.
+third_party_libraries:
+  download: false
+  fontawesome:
+    integrity:
+      css: "sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{version}}/css/all.min.css"
+    version: "7.2.0"
+  academicons:
+    integrity:
+      css: "sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
+    version: "1.9.5"
+  scholar-icons:
+    integrity:
+      css: "sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/scholar-icons@{{version}}/css/scholar-icons.css"
+    version: "1.0.3"
+  google_fonts:
+    url:
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+  vanilla-back-to-top:
+    integrity:
+      js: "sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/vanilla-back-to-top@{{version}}/dist/vanilla-back-to-top.min.js"
+    version: "7.2.1"
