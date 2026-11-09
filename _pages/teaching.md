@@ -22,5 +22,5 @@ nav_order: 2
 
 ### Master Students
 
-- Youssef Chelaifa (September 2026 -- January 2027), EPFL. Semester project: *Beyond Logarithmic Regret in Online Exp-Concave Optimization with Probes*. (co-supervised with Friedrich Eisenbrand)
+- Carlos Vallado Krause (September 2026 -- January 2027), EPFL. Semester project: *Swap Regret, Calibration, and incentive Design*. (co-supervised with Friedrich Eisenbrand and Jiaye Wei)
 - James Fox (February 2026 -- June 2026), EPFL. Semester project: *The Value of a Poisson Sample in Multislope Ski Rental*. (co-supervised with Friedrich Eisenbrand)

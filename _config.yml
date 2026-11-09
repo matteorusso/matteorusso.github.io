@@ -201,8 +201,8 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
-  sort_by: year
-  order: descending
+  sort_by: year, abbr, arxiv
+  order: descending, ascending, descending
 
 filtered_bibtex_keywords:
   - abbr
